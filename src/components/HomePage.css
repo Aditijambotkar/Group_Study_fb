@@ -1,0 +1,87 @@
+/* HomePage.css */
+
+/* Full screen with content over it */
+.home-page {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    background-color: #f7f7f7; /* Light background color */
+    overflow: hidden; /* Prevent scrolling */
+    text-align: center;
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove margin to prevent any overflow */
+  }
+  
+  /* Styling for the logo */
+  .home-header {
+    position: absolute;
+    top: 20px; /* Adjusted for top spacing */
+    z-index: 1; /* Keep logo above content */
+  }
+  
+  .logo {
+    width: 100px; /* Adjusted size of the logo */
+    height: auto;
+  }
+  
+  /* Styling the content (heading and paragraph) */
+  .home-content {
+    z-index: 1; /* Make sure the content stays above background */
+    color: #333; /* Dark text color for contrast */
+    max-width: 600px; /* Limit the width of the content */
+    margin-top: 80px; /* Move content closer to the top */
+    padding: 0 10px; /* Padding to prevent overflow */
+  }
+  
+  /* Large heading font size */
+  .home-content h1 {
+    font-size: 45px; /* Smaller size for heading */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Dark color for better readability */
+    letter-spacing: 2px; /* Spacing between letters */
+    word-wrap: break-word; /* Ensure text stays within screen */
+    line-height: 1.1; /* Adjust line height for better spacing */
+  }
+  
+  /* Paragraph font size */
+  .home-content p {
+    font-size: 22px; /* Smaller size for paragraph */
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: #7f8c8d;
+    letter-spacing: 1px;
+    word-wrap: break-word; /* Ensure text stays within screen */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Space after paragraph */
+  }
+  
+  /* Styling the students' image */
+  .image-container {
+    margin-top: 20px;
+  }
+  
+  .home-image {
+    max-width: 350px; /* Smaller image size */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+  
+  /* Optional: Add a semi-transparent overlay to enhance text readability */
+  .home-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Slight dark overlay */
+    z-index: -1;
+  }
+  
